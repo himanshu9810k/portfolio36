@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>contact</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap');
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: linear-gradient(to left, rgb(0, 213, 255) , rgb(254, 254, 250));
+            
+        }
+        
+       
+       
+        .container{
+            display: flex;
+        }
+        .sidebar{
+            width: 340px;
+            background-image: linear-gradient(#43caff , white) ;
+            height: 100vh;
+            font-weight: bold;
+            
+        }
+        .sidebar nav{
+            padding: 70px;
+        }
+        .sidebar nav li{
+            list-style: none;
+            font-size: 20px;
+            padding: 30px;
+            
+        }
+        .sidebar nav li a {
+            text-decoration: none;
+        }
+        .contact{
+            font-family: "Play", sans-serif;
+            
+        }
+        .contact h1{
+            text-align: center;
+            padding: 0 34px;
+            padding-top: 144px;
+        }
+        .contact form div{
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+        }
+        .contact form div input{
+            width: 16vw;
+            border-radius: 5px;
+            margin: 5px 0;
+        }
+        #emailHelp{
+            margin: 0 5px;
+            font-size: 9px;
+            color: darkblue;
+            border-radius: 10px;
+
+        }
+        .contact button{
+            font-size: 16px;
+            padding: 9px 14px;
+            border-radius: 22px;
+            color: #f2f2f2;
+            background-color: #0994f7;
+            margin: 0 3px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .contact button:hover{
+            color: #0994f7;
+            background-color: rgb(28, 28, 28);
+            transition: 0.2s ease-in-out;
+        }
+        img{
+            border-radius: 50px;
+        }
+        .colr{
+            color: black;
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <nav>
+            <ul>
+            
+                <li><a href="intro.html" class="colr">HOME</a></li>
+                <li><a href="contact.html" class="colr">ABOUT</a></li>
+                <li><a href="resume.html" target="_blank" class="colr">RESUME</a></li>
+                <li><a href="contact.html" class="colr">SERVICES</a></li>
+             </ul>
+        
+            </nav>
+        </div>
+        <div class="contact">
+            <h1>Contact me!</h1>
+            <form>
+                <div class="mb-3">
+                    <label for="clientemail" class="form-label">Enter name</label>
+                    <input type="text" class="form-control" id="clientemail" aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3">
+                  <label for="clientemail" class="form-label">Email address</label>
+                  <input type="email" class="form-control" id="clientemail" aria-describedby="emailHelp">
+                  <div id="emailHelp" class="form-text">We'll never share your email & phone with anyone else.</div>
+                </div>
+                <div class="mb-3">
+                  <label for="clientphone" class="form-label">Phone</label>
+                  <input type="text" class="form-control" id="clientphone">
+                </div>
+                
+                <button type="submit" class="con.contact">Submit</button>
+              </form>
+        </div>
+        <div class="img">
+            <img src="cont.jpg" alt="bg" width="500" height="500" style="padding-left: 107px; padding-top: 74px;">
+        </div>
+    </div>
+</body>
+</html>
